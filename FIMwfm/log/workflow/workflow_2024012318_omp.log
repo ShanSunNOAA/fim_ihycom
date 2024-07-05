@@ -1,0 +1,24 @@
+2024-06-24 17:41:28 +0000 :: hfe01 :: Submitting SpectralFile
+2024-06-24 17:41:28 +0000 :: hfe01 :: Submission status of SpectralFile is pending at druby://10.184.3.61:39215
+2024-06-24 17:42:44 +0000 :: hfe01 :: Submission status of previously pending SpectralFile is success, jobid=62364976
+2024-06-24 17:42:44 +0000 :: hfe01 :: Task SpectralFile, jobid=62364976, in state SUCCEEDED (COMPLETED), ran for 5.0 seconds, exit status=0, try=1 (of 3)
+2024-06-24 17:42:44 +0000 :: hfe01 :: Submitting fimprep
+2024-06-24 17:42:44 +0000 :: hfe01 :: Submission status of fimprep is pending at druby://10.184.3.61:45517
+2024-06-24 17:43:34 +0000 :: hfe01 :: Submission status of previously pending fimprep is success, jobid=62364991
+2024-06-24 17:43:34 +0000 :: hfe01 :: Task fimprep, jobid=62364991, in state SUCCEEDED (COMPLETED), ran for 34.0 seconds, exit status=0, try=1 (of 3)
+2024-06-24 17:48:31 +0000 :: hfe01 :: Submitting fim
+2024-06-24 17:48:31 +0000 :: hfe01 :: Submission status of fim is pending at druby://10.184.3.61:35707
+2024-06-24 22:39:19 +0000 :: hfe10 :: Submission status of previously pending fim is success, jobid=62365408
+2024-06-24 22:39:20 +0000 :: hfe10 :: Task fim, jobid=62365408, in state SUCCEEDED (COMPLETED), ran for 16099.0 seconds, exit status=0, try=1 (of 2)
+2024-06-24 22:39:20 +0000 :: hfe10 :: Submitting fim2nc
+2024-06-24 22:39:20 +0000 :: hfe10 :: Submission status of fim2nc is pending at druby://10.184.12.61:40233
+2024-06-24 22:56:14 +0000 :: hfe10 :: Submission status of previously pending fim2nc is success, jobid=62379976
+2024-06-24 22:56:15 +0000 :: hfe10 :: Task fim2nc, jobid=62379976, in state SUCCEEDED (COMPLETED), ran for 64.0 seconds, exit status=0, try=1 (of 1)
+2024-06-24 22:56:15 +0000 :: hfe10 :: Submitting zip_subx
+2024-06-24 22:56:15 +0000 :: hfe10 :: Submission status of zip_subx is pending at druby://10.184.12.61:39435
+2024-06-24 23:13:05 +0000 :: hfe10 :: Submission status of previously pending zip_subx is success, jobid=62380803
+2024-06-24 23:13:05 +0000 :: hfe10 :: Task zip_subx, jobid=62380803, in state FAILED (FAILED), ran for 116.0 seconds, exit status=72, try=1 (of 2)
+2024-06-24 23:13:05 +0000 :: hfe10 :: Submitting zip_subx
+2024-06-24 23:13:05 +0000 :: hfe10 :: Submission status of zip_subx is pending at druby://10.184.12.61:39189
+2024-06-24 23:16:22 +0000 :: hfe10 :: Submission status of previously pending zip_subx is success, jobid=62381593
+2024-06-24 23:16:22 +0000 :: hfe10 :: Task zip_subx, jobid=62381593, in state DEAD (FAILED), ran for 110.0 seconds, exit status=72, try=2 (of 2)

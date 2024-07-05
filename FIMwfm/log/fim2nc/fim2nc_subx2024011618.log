@@ -1,0 +1,30 @@
+
+Inactive Modules:
+  1) impi/2023.2.0     2) ncview/2.1.7
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) netcdf/4.7.0
+
+The following have been reloaded with a version change:
+  1) intel/2023.2.0 => intel/2022.1.2
+
+
+FIM_RUN = /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+YEAR    = 2024
+MONTH   = 01
+DAY     = 16
+HOUR    = 18
+
+endfile= /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/fim/stdout
+nz = /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc3d/fim7_2024011618.nc
+nc0z = /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc3d/fim7_2024011600.nc
+qq1 do nc /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc3d/fim7_2024011618.nc ssw=0
+do fim2nc no ssw for 2024011618 /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618
+0
+done fim2nc for 2024011618
+passed nc chk 2024011618 1192764 1179664; removing run dir
+_______________________________________________________________
+Start Epilog on node h25c31 for job 62454192 :: Wed Jun 26 04:28:47 UTC 2024
+Job 62454192 finished for user Shan.Sun in partition hera with exit code 0:0
+_______________________________________________________________
+End Epilogue Wed Jun 26 04:28:47 UTC 2024

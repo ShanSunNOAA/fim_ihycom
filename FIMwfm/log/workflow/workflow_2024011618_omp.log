@@ -1,0 +1,39 @@
+2024-06-24 17:36:51 +0000 :: hfe01 :: Submitting SpectralFile
+2024-06-24 17:36:51 +0000 :: hfe01 :: Submission status of SpectralFile is pending at druby://10.184.3.61:45083
+2024-06-24 17:38:14 +0000 :: hfe01 :: Submission status of previously pending SpectralFile is success, jobid=62364481
+2024-06-24 17:38:14 +0000 :: hfe01 :: Task SpectralFile, jobid=62364481, in state SUCCEEDED (COMPLETED), ran for 7.0 seconds, exit status=0, try=1 (of 3)
+2024-06-24 17:38:14 +0000 :: hfe01 :: Submitting fimprep
+2024-06-24 17:38:14 +0000 :: hfe01 :: Submission status of fimprep is pending at druby://10.184.3.61:39669
+2024-06-24 17:39:44 +0000 :: hfe01 :: Submission status of previously pending fimprep is success, jobid=62364508
+2024-06-24 17:39:44 +0000 :: hfe01 :: Task fimprep, jobid=62364508, in state SUCCEEDED (COMPLETED), ran for 35.0 seconds, exit status=0, try=1 (of 3)
+2024-06-24 17:39:44 +0000 :: hfe01 :: Submitting fim
+2024-06-24 17:39:44 +0000 :: hfe01 :: Submission status of fim is pending at druby://10.184.3.61:45635
+2024-06-24 22:39:20 +0000 :: hfe10 :: Submitting SpectralFile
+2024-06-24 22:39:20 +0000 :: hfe10 :: Submission status of SpectralFile is pending at druby://10.184.12.61:40233
+2024-06-24 22:56:14 +0000 :: hfe10 :: Submission status of previously pending SpectralFile is success, jobid=62379975
+2024-06-24 22:56:15 +0000 :: hfe10 :: Task SpectralFile, jobid=62379975, in state SUCCEEDED (COMPLETED), ran for 6.0 seconds, exit status=0, try=1 (of 3)
+2024-06-24 22:56:15 +0000 :: hfe10 :: Submitting fimprep
+2024-06-24 22:56:15 +0000 :: hfe10 :: Submission status of fimprep is pending at druby://10.184.12.61:39435
+2024-06-24 23:13:05 +0000 :: hfe10 :: Submission status of previously pending fimprep is success, jobid=62380804
+2024-06-24 23:13:05 +0000 :: hfe10 :: Task fimprep, jobid=62380804, in state FAILED (FAILED), ran for 17.0 seconds, exit status=1, try=1 (of 3)
+2024-06-24 23:13:05 +0000 :: hfe10 :: Submitting fimprep
+2024-06-24 23:13:05 +0000 :: hfe10 :: Submission status of fimprep is pending at druby://10.184.12.61:39189
+2024-06-24 23:16:22 +0000 :: hfe10 :: Submission status of previously pending fimprep is success, jobid=62381594
+2024-06-24 23:16:22 +0000 :: hfe10 :: Task fimprep, jobid=62381594, in state FAILED (FAILED), ran for 17.0 seconds, exit status=1, try=2 (of 3)
+2024-06-24 23:16:22 +0000 :: hfe10 :: Submitting fimprep
+2024-06-24 23:16:22 +0000 :: hfe10 :: Submission status of fimprep is pending at druby://10.184.12.61:36991
+2024-06-24 23:16:36 +0000 :: hfe10 :: Submission status of previously pending fimprep is success, jobid=62381638
+2024-06-24 23:16:36 +0000 :: hfe10 :: Task fimprep, jobid=62381638, in state RUNNING (RUNNING)
+2024-06-24 23:17:53 +0000 :: hfe10 :: Task fimprep, jobid=62381638, in state DEAD (FAILED), ran for 18.0 seconds, exit status=1, try=3 (of 3)
+2024-06-24 23:19:24 +0000 :: hfe10 :: Submitting SpectralFile
+2024-06-24 23:19:24 +0000 :: hfe10 :: Submission status of SpectralFile is pending at druby://10.184.12.61:34991
+2024-06-24 23:26:58 +0000 :: hfe10 :: Submission status of previously pending SpectralFile is success, jobid=62381679
+2024-06-24 23:26:58 +0000 :: hfe10 :: Task SpectralFile, jobid=62381679, in state SUCCEEDED (COMPLETED), ran for 6.0 seconds, exit status=0, try=1 (of 3)
+2024-06-24 23:26:58 +0000 :: hfe10 :: Submitting fimprep
+2024-06-24 23:26:58 +0000 :: hfe10 :: Submission status of fimprep is pending at druby://10.184.12.61:42939
+2024-06-24 23:45:28 +0000 :: hfe01 :: Submission status of previously pending fimprep is success, jobid=62381829
+2024-06-24 23:45:28 +0000 :: hfe01 :: Task fimprep, jobid=62381829, in state SUCCEEDED (COMPLETED), ran for 37.0 seconds, exit status=0, try=1 (of 3)
+2024-06-24 23:45:28 +0000 :: hfe01 :: Submitting fim
+2024-06-24 23:45:28 +0000 :: hfe01 :: Submission status of fim is pending at druby://10.184.3.61:44151
+2024-06-26 04:27:28 +0000 :: hfe07 :: Forcibly submitting fim2nc
+2024-06-26 04:27:28 +0000 :: hfe07 :: Submission status of fim2nc is pending at druby://10.184.8.62:45819

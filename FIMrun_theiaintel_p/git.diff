@@ -1,0 +1,171 @@
+commit 8aadcefd370ac069e504d6ade92297d6282dd015
+Author: Shan.Sun <shan.sun@noaa.gov>
+Date:   Thu Oct 24 20:28:40 2019 +0000
+
+    Porting SubX realtime run to hera (still under the name of theia).
+diff --git a/FIMrun/FIMnamelist.theia b/FIMrun/FIMnamelist.theia
+index 83b66cb7..56c8f5bb 100644
+--- a/FIMrun/FIMnamelist.theia
++++ b/FIMrun/FIMnamelist.theia
+@@ -1,18 +1,18 @@
+  &QUEUEnamelist
+-   ComputeTasks = '20' ! Number of compute tasks for FIM (1 for serial) 
+-   MaxQueueTime = '04:00:00'                        ! Run time for complete job (HH:MM:SS) [ Ignored by WFM ]
++   ComputeTasks = '80' ! Number of compute tasks for FIM (1 for serial) 
++   MaxQueueTime = '00:30:00'                        ! Run time for complete job (HH:MM:SS) [ Ignored by WFM ]
+    PREPDIR = 'nodir'                                ! If exists, use for prep otherwise calculate prep
+    FIMDIR  = 'nodir'                                ! If exists, use for FIM otherwise calculate FIM
+-   DATADIR = '/scratch4/BMC/fim/fimdata'            ! Location of gfsltln and global_mtnvar files
+-   DATADR2 = '/scratch4/BMC/fim/fimdata'            ! Location of the sanl file and the sfcanl file
+-   chem_datadir = '/scratch4/BMC/fim/fimdata'       ! Location of chemistry data files
++   DATADIR = '/scratch1/BMC/gsd-fv3-dev/fimdata'            ! Location of gfsltln and global_mtnvar files
++   DATADR2 = '/scratch1/BMC/gsd-fv3-dev/fimdata'            ! Location of the sanl file and the sfcanl file
++   chem_datadir = '/scratch1/BMC/gsd-fv3-dev/fimdata'       ! Location of chemistry data files
+ /
+  &TOPOnamelist
+-   topodatfile = '/scratch4/BMC/fim/fimdata/wrf5mintopo.dat'
++   topodatfile = '/scratch1/BMC/gsd-fv3-dev/fimdata/wrf5mintopo.dat'
+ /
+  &LANDnamelist
+ !!   landsmoothfact=0.75
+-   landdatdir='/scratch4/BMC/fim/fimdata/'          ! Need ending / in path name!!
++   landdatdir='/scratch1/BMC/gsd-fv3-dev/fimdata/'          ! Need ending / in path name!!
+    landdatfile='geo_em.d01.nc'
+    landglvldir='./'
+    niland=4001
+@@ -50,7 +50,7 @@
+    dt_reducer_numerator = 9.		! dt = dt*dt_reducer_numerator/dt_reducer_denominator
+    ptop=50.
+    thktop=50.
+-   atm_trnsecdir     = '/scratch4/BMC/fim/fimdata/ihycomproc/bsncrop/' ! atm.transects
++   atm_trnsecdir     = '/scratch1/BMC/gsd-fv3-dev/fimdata/ihycomproc/bsncrop/' ! atm.transects
+ /
+  &PHYSICSnamelist
+    PhysicsInterval   =  180           ! Interval in seconds to call non-radiation physics (0=every step)
+@@ -87,7 +87,7 @@
+    fhlwr = 3600.  ! jbao 
+ /
+  &TIMEnamelist
+-  yyyymmddhhmm = "199901010000"		! date of the model run
++  yyyymmddhhmm = "201909260600"		! date of the model run
+ /
+  &OCEANnamelist
+    ocnonly      = .false.		! if T, use CORE forcings & no FIM output
+@@ -146,8 +146,8 @@
+    itest        = -1			! ocn.testpt, distinct from PrintIpnDiag
+ 
+    ann_core	= .false.		! if true, use annually averaged CORE forcing
+-   ocn_trnsecdir  = '/scratch3/BMC/fim/fimdata/ihycomproc/bsncrop/'  ! ocn.transects
+-   inicondir      = '/scratch3/BMC/fim/fimdata/'
++   ocn_trnsecdir  = '/scratch1/BMC/gsd-fv3-dev/fimdata/ihycomproc/bsncrop/'  ! ocn.transects
++   inicondir      = '/scratch1/BMC/gsd-fv3-dev/fimdata/'
+ /
+  &OUTPUTnamelist
+    ArchvTimeUnit     =  'hr'		! ts:timestep; mi:minute; hr:hour; dy:day; mo:month
+@@ -174,15 +174,15 @@
+ ! WRITETASKnamelist is ignored for a serial run.
+ !
+  &WRITETASKnamelist
+-   check_omp_consistency = .true.	! FIM checks for consistency of OpenMP settings
+-   abort_on_bad_task_distrib = .true.	! Abort FIM when node names are not as expected
+-   cpn = 48      ! Number of cores per node 
+-   mpipn = 2    ! Number of MPI tasks per node 
+-   nthreads = 24 ! Number of threads per task if OMP threading enabled 
+-   debugmsg_on = .false.		! Print verbose debug messages
+-   max_write_tasks_per_node = 1		! Maximum number of write tasks to place on a single node
+-   num_write_tasks = 0			! Use: 0 = no write tasks, 1 = one
+-   root_own_node = .true.		! whether root process has node to itself
++   check_omp_consistency = .true.     ! FIM checks for consistency of OpenMP settings
++   abort_on_bad_task_distrib = .true. ! Abort FIM when node names are not as expected
++   cpn = 40                           ! Number of cores per node 
++   mpipn = 1                          ! Number of MPI tasks per node 
++   nthreads = 40                      ! Number of threads per task if OMP threading enabled 
++   debugmsg_on = .false.	      ! Print verbose debug messages
++   max_write_tasks_per_node = 1	      ! Maximum number of write tasks to place on a single node
++   num_write_tasks = 0		      ! Use: 0 = no write tasks, 1 = one
++   root_own_node = .true.             ! whether root process has node to itself 
+ /
+ !
+   &POSTnamelist
+@@ -260,6 +260,6 @@
+ ! System specific parameters for MPI, task geometry, etc.
+ !
+  &SYSTEMnamelist
+-!!MPIRUNCMD='mpirun -np'    ! on theta
+-  MPIRUNCMD='mpiexec -np'   ! on hera
++  MPIRUNCMD='mpiexec -np'
++!!  MPIRUNCMD='mpirun -np'
+ /
+diff --git a/FIMsrc/fim_setup.ksh b/FIMsrc/fim_setup.ksh
+index a72ab602..074fbf51 100755
+--- a/FIMsrc/fim_setup.ksh
++++ b/FIMsrc/fim_setup.ksh
+@@ -28,15 +28,15 @@ function jet_modsetup {
+ }
+ 
+ function theia_common {
+-  print module load intel
+-  print module load impi/2018.0.4
++  print module load intel/2022.1.2
++  print module load impi/2022.1.2
+   print module load grads/2.0.2
+   print module load ncl/6.5.0
+   print module load imagemagick/7.0.8-53
+   print module load cnvgrib/1.4.0
+   print module use -a /scratch3/NCEPDEV/nwprod/lib/modulefiles
+-  print module load nemsio/v2.2.2
+-  print module load bacio/v2.0.2
++#ss  print module load nemsio/v2.2.2
++#ss  print module load bacio/v2.0.2
+ #hera  print module load contrib wrap-mpi
+ 
+ }
+@@ -152,8 +152,8 @@ function noaaknl {
+ 
+ function theiaintel {
+   theia_modsetup
+-  print module load intel/18.0.5.274  
+-  print module load impi/2018.0.4
++  print module load intel/2022.1.2
++  print module load impi/2022.1.2
+   print module load netcdf/4.6.1
+ #  print module load pnetcdf/1.10.0
+   theia_common
+@@ -161,7 +161,7 @@ function theiaintel {
+ 
+ function theianems {
+   theia_modsetup
+-  print module load intel/14.0.2
++  print module load intel/2022.1.2
+   print module load netcdf/4.6.1
+   theia_common
+ # Switch to the version of impi used in the ESMF library build
+diff --git a/FIMsrc/macros.make.theiaintel b/FIMsrc/macros.make.theiaintel
+index fb375ce5..e2b5c94c 100644
+--- a/FIMsrc/macros.make.theiaintel
++++ b/FIMsrc/macros.make.theiaintel
+@@ -94,7 +94,7 @@ GPTL_LDFLAGS = -L../../dummygptl -lgptl
+ 
+ # Set "USE_GPTL = yes" to use the real GPTL
+ 
+-USE_GPTL = yes
++USE_GPTL = no
+ ifeq ($(USE_GPTL),yes)
+   ifeq ($(P),p) # parallel build
+     # Set include path for GPTL
+@@ -137,6 +137,7 @@ FCncarg = ncargf90.intel
+ # SMS settings
+ 
+ # MPI include location
++##INCMPI=$(I_MPI_ROOT)/include/ilp64/
+ INCMPI=$(I_MPI_ROOT)/include64
+ # Ruby interpreter location
+ export SMS__RUBY=/contrib/sms/ruby/bin/ruby
+@@ -145,5 +146,6 @@ ifeq ($(USE_GPTL),yes)
+ # If available, use SMS version compiled with auto-profiling flag
+   SMS = /contrib/sms/SMS_r826
+ else
+-  SMS = /contrib/sms/SMS_r826
++##ss SMS = /contrib/sms/SMS_r826
++  SMS = /contrib/sms/SMS_r826_intel_2022.1.2_impi_2022.1.2
+ endif

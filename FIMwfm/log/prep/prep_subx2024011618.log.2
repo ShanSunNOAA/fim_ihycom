@@ -1,0 +1,349 @@
+Rocoto FIM_RUN: /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+batchTemplate-prep[17]: ksh_insist
+batchTemplate-prep[21]: test 1 '==' ENSEMBLE
+batchTemplate-prep[25]: test -n 1 -a ! -d /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024
+batchTemplate-prep[29]: [[ -n 1 ]]
+batchTemplate-prep[30]: cd /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+batchTemplate-prep[35]: test -z ''
+batchTemplate-prep[35]: xsource ./batchTemplate-setup
+batchTemplate-prep[395]: . ./batchTemplate-setup
+batchTemplate-setup[3]: CONTEXT=batchTemplate-setup
+batchTemplate-setup[7]: [[ -z true ]]
+batchTemplate-setup[12]: ksh_insist
+batchTemplate-setup[14]: xsource ./chem_functions.ksh
+batchTemplate-setup[395]: . ./chem_functions.ksh
+chem_functions.ksh[1]: CONTEXT=chem_functions.ksh
+batchTemplate-setup[21]: test -n /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist
+batchTemplate-setup[21]: fimnamelist=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist
+batchTemplate-setup[27]: NLFILE=FIMnamelist
+batchTemplate-setup[32]: [[ -z 1 ]]
+batchTemplate-setup[49]: print 'Using FIMnamelist at /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist'
+Using FIMnamelist at /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist
+batchTemplate-setup[53]: get_build_config
+batchTemplate-setup[54]: get_parallelism
+batchTemplate-setup[55]: get_pes
+Picked up _JAVA_OPTIONS: -Xmx6G
+batchTemplate-setup[56]: get_runmaster
+batchTemplate-setup[58]: BINDIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+batchTemplate-setup[59]: SUBDIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+batchTemplate-setup[63]: xsource_notrace /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/envset
+Lmod has detected the following error: The following module(s) are unknown:
+"grads/2.0.2"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "grads/2.0.2"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"ncl/6.5.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "ncl/6.5.0"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"imagemagick/7.0.8-53"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "imagemagick/7.0.8-53"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cnvgrib/1.4.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cnvgrib/1.4.0"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+Currently Loaded Modules:
+  1) intel/2022.1.2   2) netcdf/4.6.1   3) impi/2022.1.2
+
+ 
+
+batchTemplate-setup[67]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist cntlnamelist glvl GLVL
+batchTemplate-setup[68]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist cntlnamelist nvl NVL
+batchTemplate-setup[70]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist queuenamelist datadir DATADIR
+batchTemplate-setup[71]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist queuenamelist datadr2 DATADR2
+batchTemplate-setup[72]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist queuenamelist fimdir FIMDIR
+batchTemplate-setup[73]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist queuenamelist prepdir PREPDIR
+batchTemplate-setup[75]: chem_on
+batchTemplate-setup[75]: CHEMFLAG=false
+batchTemplate-setup[81]: [[ false == true ]]
+batchTemplate-setup[87]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist writetasknamelist max_write_tasks_per_node mwtpn
+batchTemplate-setup[91]: /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/jdate 202401161800
+batchTemplate-setup[91]: JDATE=240161800
+batchTemplate-setup[94]: print 240161800
+batchTemplate-setup[94]: cut -c6-7
+batchTemplate-setup[94]: read hh
+batchTemplate-setup[96]: test -z 18
+batchTemplate-setup[100]: [[ 1 == ENSEMBLE ]]
+batchTemplate-setup[113]: GMPIENVVAR=F_UFMTENDIAN
+batchTemplate-setup[114]: dpsig=../dpsig64.txt
+batchTemplate-setup[115]: ocn_dpmin=../ocn_dpmin.txt
+batchTemplate-setup[116]: ocn_target=../ocn_target.txt
+batchTemplate-setup[117]: fimgribtable=../fim_gribtable
+batchTemplate-setup[118]: REDUCE=../reduce
+batchTemplate-setup[119]: reduceinput=../REDUCEinput
+batchTemplate-setup[120]: smsnamelist=../SMSnamelist
+batchTemplate-setup[121]: gptlnamelist=../GPTLnamelist
+batchTemplate-setup[122]: thetacoor=../theta_coor64.txt
+batchTemplate-setup[123]: topgrid=../top_grid
+batchTemplate-setup[127]: test -f /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/git.diff
+batchTemplate-setup[127]: cat /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/git.diff
+commit 8aadcefd370ac069e504d6ade92297d6282dd015
+Author: Shan.Sun <shan.sun@noaa.gov>
+Date:   Thu Oct 24 20:28:40 2019 +0000
+
+    Porting SubX realtime run to hera (still under the name of theia).
+diff --git a/FIMrun/FIMnamelist.theia b/FIMrun/FIMnamelist.theia
+index 83b66cb7..56c8f5bb 100644
+--- a/FIMrun/FIMnamelist.theia
++++ b/FIMrun/FIMnamelist.theia
+@@ -1,18 +1,18 @@
+  &QUEUEnamelist
+-   ComputeTasks = '20' ! Number of compute tasks for FIM (1 for serial) 
+-   MaxQueueTime = '04:00:00'                        ! Run time for complete job (HH:MM:SS) [ Ignored by WFM ]
++   ComputeTasks = '80' ! Number of compute tasks for FIM (1 for serial) 
++   MaxQueueTime = '00:30:00'                        ! Run time for complete job (HH:MM:SS) [ Ignored by WFM ]
+    PREPDIR = 'nodir'                                ! If exists, use for prep otherwise calculate prep
+    FIMDIR  = 'nodir'                                ! If exists, use for FIM otherwise calculate FIM
+-   DATADIR = '/scratch4/BMC/fim/fimdata'            ! Location of gfsltln and global_mtnvar files
+-   DATADR2 = '/scratch4/BMC/fim/fimdata'            ! Location of the sanl file and the sfcanl file
+-   chem_datadir = '/scratch4/BMC/fim/fimdata'       ! Location of chemistry data files
++   DATADIR = '/scratch1/BMC/gsd-fv3-dev/fimdata'            ! Location of gfsltln and global_mtnvar files
++   DATADR2 = '/scratch1/BMC/gsd-fv3-dev/fimdata'            ! Location of the sanl file and the sfcanl file
++   chem_datadir = '/scratch1/BMC/gsd-fv3-dev/fimdata'       ! Location of chemistry data files
+ /
+  &TOPOnamelist
+-   topodatfile = '/scratch4/BMC/fim/fimdata/wrf5mintopo.dat'
++   topodatfile = '/scratch1/BMC/gsd-fv3-dev/fimdata/wrf5mintopo.dat'
+ /
+  &LANDnamelist
+ !!   landsmoothfact=0.75
+-   landdatdir='/scratch4/BMC/fim/fimdata/'          ! Need ending / in path name!!
++   landdatdir='/scratch1/BMC/gsd-fv3-dev/fimdata/'          ! Need ending / in path name!!
+    landdatfile='geo_em.d01.nc'
+    landglvldir='./'
+    niland=4001
+@@ -50,7 +50,7 @@
+    dt_reducer_numerator = 9.		! dt = dt*dt_reducer_numerator/dt_reducer_denominator
+    ptop=50.
+    thktop=50.
+-   atm_trnsecdir     = '/scratch4/BMC/fim/fimdata/ihycomproc/bsncrop/' ! atm.transects
++   atm_trnsecdir     = '/scratch1/BMC/gsd-fv3-dev/fimdata/ihycomproc/bsncrop/' ! atm.transects
+ /
+  &PHYSICSnamelist
+    PhysicsInterval   =  180           ! Interval in seconds to call non-radiation physics (0=every step)
+@@ -87,7 +87,7 @@
+    fhlwr = 3600.  ! jbao 
+ /
+  &TIMEnamelist
+-  yyyymmddhhmm = "199901010000"		! date of the model run
++  yyyymmddhhmm = "201909260600"		! date of the model run
+ /
+  &OCEANnamelist
+    ocnonly      = .false.		! if T, use CORE forcings & no FIM output
+@@ -146,8 +146,8 @@
+    itest        = -1			! ocn.testpt, distinct from PrintIpnDiag
+ 
+    ann_core	= .false.		! if true, use annually averaged CORE forcing
+-   ocn_trnsecdir  = '/scratch3/BMC/fim/fimdata/ihycomproc/bsncrop/'  ! ocn.transects
+-   inicondir      = '/scratch3/BMC/fim/fimdata/'
++   ocn_trnsecdir  = '/scratch1/BMC/gsd-fv3-dev/fimdata/ihycomproc/bsncrop/'  ! ocn.transects
++   inicondir      = '/scratch1/BMC/gsd-fv3-dev/fimdata/'
+ /
+  &OUTPUTnamelist
+    ArchvTimeUnit     =  'hr'		! ts:timestep; mi:minute; hr:hour; dy:day; mo:month
+@@ -174,15 +174,15 @@
+ ! WRITETASKnamelist is ignored for a serial run.
+ !
+  &WRITETASKnamelist
+-   check_omp_consistency = .true.	! FIM checks for consistency of OpenMP settings
+-   abort_on_bad_task_distrib = .true.	! Abort FIM when node names are not as expected
+-   cpn = 48      ! Number of cores per node 
+-   mpipn = 2    ! Number of MPI tasks per node 
+-   nthreads = 24 ! Number of threads per task if OMP threading enabled 
+-   debugmsg_on = .false.		! Print verbose debug messages
+-   max_write_tasks_per_node = 1		! Maximum number of write tasks to place on a single node
+-   num_write_tasks = 0			! Use: 0 = no write tasks, 1 = one
+-   root_own_node = .true.		! whether root process has node to itself
++   check_omp_consistency = .true.     ! FIM checks for consistency of OpenMP settings
++   abort_on_bad_task_distrib = .true. ! Abort FIM when node names are not as expected
++   cpn = 40                           ! Number of cores per node 
++   mpipn = 1                          ! Number of MPI tasks per node 
++   nthreads = 40                      ! Number of threads per task if OMP threading enabled 
++   debugmsg_on = .false.	      ! Print verbose debug messages
++   max_write_tasks_per_node = 1	      ! Maximum number of write tasks to place on a single node
++   num_write_tasks = 0		      ! Use: 0 = no write tasks, 1 = one
++   root_own_node = .true.             ! whether root process has node to itself 
+ /
+ !
+   &POSTnamelist
+@@ -260,6 +260,6 @@
+ ! System specific parameters for MPI, task geometry, etc.
+ !
+  &SYSTEMnamelist
+-!!MPIRUNCMD='mpirun -np'    ! on theta
+-  MPIRUNCMD='mpiexec -np'   ! on hera
++  MPIRUNCMD='mpiexec -np'
++!!  MPIRUNCMD='mpirun -np'
+ /
+diff --git a/FIMsrc/fim_setup.ksh b/FIMsrc/fim_setup.ksh
+index a72ab602..074fbf51 100755
+--- a/FIMsrc/fim_setup.ksh
++++ b/FIMsrc/fim_setup.ksh
+@@ -28,15 +28,15 @@ function jet_modsetup {
+ }
+ 
+ function theia_common {
+-  print module load intel
+-  print module load impi/2018.0.4
++  print module load intel/2022.1.2
++  print module load impi/2022.1.2
+   print module load grads/2.0.2
+   print module load ncl/6.5.0
+   print module load imagemagick/7.0.8-53
+   print module load cnvgrib/1.4.0
+   print module use -a /scratch3/NCEPDEV/nwprod/lib/modulefiles
+-  print module load nemsio/v2.2.2
+-  print module load bacio/v2.0.2
++#ss  print module load nemsio/v2.2.2
++#ss  print module load bacio/v2.0.2
+ #hera  print module load contrib wrap-mpi
+ 
+ }
+@@ -152,8 +152,8 @@ function noaaknl {
+ 
+ function theiaintel {
+   theia_modsetup
+-  print module load intel/18.0.5.274  
+-  print module load impi/2018.0.4
++  print module load intel/2022.1.2
++  print module load impi/2022.1.2
+   print module load netcdf/4.6.1
+ #  print module load pnetcdf/1.10.0
+   theia_common
+@@ -161,7 +161,7 @@ function theiaintel {
+ 
+ function theianems {
+   theia_modsetup
+-  print module load intel/14.0.2
++  print module load intel/2022.1.2
+   print module load netcdf/4.6.1
+   theia_common
+ # Switch to the version of impi used in the ESMF library build
+diff --git a/FIMsrc/macros.make.theiaintel b/FIMsrc/macros.make.theiaintel
+index fb375ce5..e2b5c94c 100644
+--- a/FIMsrc/macros.make.theiaintel
++++ b/FIMsrc/macros.make.theiaintel
+@@ -94,7 +94,7 @@ GPTL_LDFLAGS = -L../../dummygptl -lgptl
+ 
+ # Set "USE_GPTL = yes" to use the real GPTL
+ 
+-USE_GPTL = yes
++USE_GPTL = no
+ ifeq ($(USE_GPTL),yes)
+   ifeq ($(P),p) # parallel build
+     # Set include path for GPTL
+@@ -137,6 +137,7 @@ FCncarg = ncargf90.intel
+ # SMS settings
+ 
+ # MPI include location
++##INCMPI=$(I_MPI_ROOT)/include/ilp64/
+ INCMPI=$(I_MPI_ROOT)/include64
+ # Ruby interpreter location
+ export SMS__RUBY=/contrib/sms/ruby/bin/ruby
+@@ -145,5 +146,6 @@ ifeq ($(USE_GPTL),yes)
+ # If available, use SMS version compiled with auto-profiling flag
+   SMS = /contrib/sms/SMS_r826
+ else
+-  SMS = /contrib/sms/SMS_r826
++##ss SMS = /contrib/sms/SMS_r826
++  SMS = /contrib/sms/SMS_r826_intel_2022.1.2_impi_2022.1.2
+ endif
+batchTemplate-setup[129]: compare_var_setup /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist 80 parallel
+Picked up _JAVA_OPTIONS: -Xmx6G
+batchTemplate-setup[134]: logically_true f
+batchTemplate-setup[143]: print 202401161800
+batchTemplate-setup[143]: cut -c1-10
+batchTemplate-setup[143]: yyyymmddhh=2024011618
+batchTemplate-setup[145]: [[ -n 1 ]]
+batchTemplate-setup[146]: RUNDIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618
+batchTemplate-setup[150]: PREP=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep
+batchTemplate-setup[151]: FIM=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/fim
+batchTemplate-setup[152]: POST=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/post
+batchTemplate-setup[153]: logical_false
+batchTemplate-setup[153]: COMPARE_VAR_ON=f
+batchTemplate-setup[154]: DIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618
+batchTemplate-setup[167]: [[ -d '' ]]
+batchTemplate-setup[171]: [[ -n 1 ]]
+batchTemplate-setup[172]: echo 'qq wfm: DIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618'
+qq wfm: DIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618
+batchTemplate-setup[180]: echo 'qq DIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618 PREP=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep'
+qq DIR=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618 PREP=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep
+batchTemplate-setup[182]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist prepnamelist atm_ic atm_ic
+Picked up _JAVA_OPTIONS: -Xmx6G
+batchTemplate-setup[183]: [[ 2 == 2 ]]
+batchTemplate-setup[184]: sanlFile=siganl.gdas.2024011618
+batchTemplate-setup[185]: sfcanlFile=sfcanl.gdas.2024011618
+batchTemplate-setup[186]: [[ 1 == 1 ]]
+batchTemplate-setup[187]: echo 'spectralFile_subx_retro.ksh does it'
+spectralFile_subx_retro.ksh does it
+batchTemplate-setup[202]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist prepnamelist ocn_ic ocn_ic
+batchTemplate-setup[203]: [[ 2 == 2 ]]
+batchTemplate-setup[204]: ocnTSFile=ocnanl.gdas.2024011618.ocean_temp_salt.res.nc
+batchTemplate-setup[205]: ocnIceFile=ocnanl.gdas.2024011618.ice_model.res.nc
+batchTemplate-setup[206]: [[ 1 == 1 ]]
+batchTemplate-setup[207]: echo 'spectralFile_subx_retro.ksh does it'
+spectralFile_subx_retro.ksh does it
+batchTemplate-setup[231]: [[ -n 1 ]]
+batchTemplate-setup[231]: [[ ! -d /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/post/fim/NAT/grib1 ]]
+batchTemplate-setup[235]: FIMEXEBASE=fim
+batchTemplate-setup[236]: FIMEXE=fim
+batchTemplate-setup[237]: GRID_FILE=icos_grid_level.dat
+batchTemplate-setup[238]: INFO_FILE=icos_grid_info_level.dat
+batchTemplate-setup[239]: LATLON_FILE=latlonIJ.dat
+batchTemplate-setup[240]: GLVL_FILE=glvl.dat
+batchTemplate-setup[241]: GFSFC_FILE=gfsfc.dat
+batchTemplate-setup[243]: check_nems
+batchTemplate-setup[248]: logically_true f
+batchTemplate-setup[251]: taskcounts=80
+batchTemplate-setup[260]: batchTemplate_setup_ran=1
+batchTemplate-setup[262]: return 0
+batchTemplate-prep[39]: FIMRUN=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+batchTemplate-prep[40]: cd /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618
+batchTemplate-prep[56]: [[ -d nodir ]]
+batchTemplate-prep[62]: cp /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep/FIMnamelist
+batchTemplate-prep[63]: cp ../theta_coor64.txt /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep/theta_coor.txt
+batchTemplate-prep[64]: cp ../dpsig64.txt /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep/dpsig.txt
+batchTemplate-prep[65]: cp ../top_grid /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep/top_grid
+batchTemplate-prep[66]: get_nl_value /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/FIMnamelist OCEANnamelist atmonly runatm
+batchTemplate-prep[67]: cp /scratch1/BMC/gsd-fv3-dev/fimdata/ocean_bcs_ltln.360x180.dat /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep/ocean_bcs_ltln
+cp: cannot create regular file '/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024011618/prep/ocean_bcs_ltln': Permission denied
+batchTemplate-prep[67]: fail
+_______________________________________________________________
+Start Epilog on node h19c03 for job 62380804 :: Mon Jun 24 22:56:34 UTC 2024
+Job 62380804 finished for user Shan.Sun in partition hera with exit code 1:0
+_______________________________________________________________
+End Epilogue Mon Jun 24 22:56:34 UTC 2024

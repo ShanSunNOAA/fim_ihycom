@@ -1,0 +1,26 @@
+2024-07-01 18:00:58 +0000 :: hfe08 :: Submitting SpectralFile
+2024-07-01 18:00:58 +0000 :: hfe08 :: Submission status of SpectralFile is pending at druby://10.184.10.61:46335
+2024-07-01 18:08:28 +0000 :: hfe08 :: Submission status of previously pending SpectralFile is success, jobid=62772825
+2024-07-01 18:08:29 +0000 :: hfe08 :: Task SpectralFile, jobid=62772825, in state SUCCEEDED (COMPLETED), ran for 18.0 seconds, exit status=0, try=1 (of 3)
+2024-07-01 18:08:29 +0000 :: hfe08 :: Submitting fimprep
+2024-07-01 18:08:29 +0000 :: hfe08 :: Submission status of fimprep is pending at druby://10.184.10.61:42657
+2024-07-01 18:09:30 +0000 :: hfe08 :: Submission status of previously pending fimprep is success, jobid=62773112
+2024-07-01 18:09:31 +0000 :: hfe08 :: Task fimprep, jobid=62773112, in state SUCCEEDED (COMPLETED), ran for 34.0 seconds, exit status=0, try=1 (of 3)
+2024-07-01 18:09:31 +0000 :: hfe08 :: Submitting fim
+2024-07-01 18:09:31 +0000 :: hfe08 :: Submission status of fim is pending at druby://10.184.10.61:34583
+2024-07-04 22:12:00 +0000 :: hfe11 :: Submission status of fim for cycle 202310180600 could not be retrieved because the server process at druby://10.184.10.61:34583 died
+2024-07-04 22:12:00 +0000 :: hfe11 :: Submission of fim for cycle 202310180600 probably, but not necessarily, failed.  It will be resubmitted
+2024-07-04 22:12:00 +0000 :: hfe11 :: Forcibly submitting fim
+2024-07-04 22:12:00 +0000 :: hfe11 :: Submission status of fim is pending at druby://10.184.12.62:44079
+2024-07-04 22:13:51 +0000 :: hfe11 :: Submission status of previously pending fim is success, jobid=62925924
+2024-07-04 22:13:51 +0000 :: hfe11 :: Task fim, jobid=62925924, in state FAILED (CANCELLED), ran for 0.0 seconds, exit status=255, try=1 (of 2)
+2024-07-04 22:13:51 +0000 :: hfe11 :: Forcibly submitting fim
+2024-07-04 22:13:51 +0000 :: hfe11 :: Submission status of fim is pending at druby://10.184.12.62:41445
+2024-07-05 16:58:38 +0000 :: hfe06 :: Submission status of previously pending fim is success, jobid=62926149
+2024-07-05 16:58:38 +0000 :: hfe06 :: Task fim, jobid=62926149, in state SUCCEEDED (COMPLETED), ran for 11306.0 seconds, exit status=0, try=3 (of 2)
+2024-07-05 16:58:39 +0000 :: hfe06 :: Submitting fim2nc
+2024-07-05 16:58:39 +0000 :: hfe06 :: Submission status of fim2nc is pending at druby://10.184.8.61:40703
+2024-07-05 17:02:35 +0000 :: hfe06 :: Submission status of previously pending fim2nc is success, jobid=62967360
+2024-07-05 17:02:35 +0000 :: hfe06 :: Task fim2nc, jobid=62967360, in state SUCCEEDED (COMPLETED), ran for 1.0 seconds, exit status=0, try=1 (of 1)
+2024-07-05 17:05:11 +0000 :: hfe06 :: Forcibly submitting fim2nc
+2024-07-05 17:05:11 +0000 :: hfe06 :: Submission status of fim2nc is pending at druby://10.184.8.61:43751

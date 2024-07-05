@@ -1,0 +1,12 @@
+2024-06-27 04:57:16 +0000 :: hfe09 :: Submitting SpectralFile
+2024-06-27 04:57:16 +0000 :: hfe09 :: Submission status of SpectralFile is pending at druby://10.184.10.62:36275
+2024-06-27 04:58:55 +0000 :: hfe09 :: Submission status of previously pending SpectralFile is success, jobid=62510567
+2024-06-27 04:58:55 +0000 :: hfe09 :: Task SpectralFile, jobid=62510567, in state SUCCEEDED (COMPLETED), ran for 5.0 seconds, exit status=0, try=1 (of 3)
+2024-06-27 04:58:55 +0000 :: hfe09 :: Submitting fimprep
+2024-06-27 04:58:55 +0000 :: hfe09 :: Submission status of fimprep is pending at druby://10.184.10.62:42751
+2024-06-27 05:18:48 +0000 :: hfe09 :: Submission status of previously pending fimprep is success, jobid=62510613
+2024-06-27 05:18:50 +0000 :: hfe09 :: Task fimprep, jobid=62510613, in state SUCCEEDED (COMPLETED), ran for 35.0 seconds, exit status=0, try=1 (of 3)
+2024-06-27 05:18:50 +0000 :: hfe09 :: Submitting fim
+2024-06-27 05:18:50 +0000 :: hfe09 :: Submission status of fim is pending at druby://10.184.10.62:34223
+2024-06-28 17:32:56 +0000 :: hfe11 :: Forcibly submitting fim2nc
+2024-06-28 17:32:56 +0000 :: hfe11 :: Submission status of fim2nc is pending at druby://10.184.12.62:36911

@@ -1,0 +1,104 @@
+
+Inactive Modules:
+  1) impi/2023.2.0     2) ncview/2.1.7
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) netcdf/4.7.0
+
+The following have been reloaded with a version change:
+  1) intel/2023.2.0 => intel/2022.1.2
+
+
+FIM_RUN = /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+YEAR    = 2024
+MONTH   = 01
+DAY     = 23
+HOUR    = 18
+
+do nc_subx for 2024012318; string=FIM_24jan2024_00z_d01_d32
+chk outDIR is /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc2d /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc2d 
+ncwa: WARNING: Variable "zg" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "zg" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ua" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "va" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ua" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "va" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "huss" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "wap" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ua" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "va" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "zg" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "zg" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "zg" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "zg" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ta" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ta" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ta" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ta" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ua" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ua" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "ua" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "va" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "va" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+ncwa: WARNING: Variable "va" uses the non-standard attribute name "cell_method" instead of "cell_methods", the correct attribute name. The CAM3 and CLM3 models (and others?) have this problem. Expect "double attributes" in output. This message is printed only once per invocation, although the problem likely occurs in multiple variables.
+zipfile will be in fim_24jan2024_m02.zip
+  adding: hfls_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 10%)
+  adding: hfss_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 9%)
+  adding: huss_850_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 13%)
+  adding: mrso_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 76%)
+  adding: pr_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 16%)
+  adding: psl_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 27%)
+  adding: rad_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 13%)
+  adding: rlut_toa_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 18%)
+  adding: sic_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 95%)
+  adding: stx_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: sty_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: swe_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 70%)
+  adding: ta_100_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 23%)
+  adding: ta_10_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 25%)
+  adding: ta_30_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 25%)
+  adding: ta_50_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 24%)
+  adding: tas_2m_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 24%)
+  adding: tasmax_2m_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 24%)
+  adding: tasmin_2m_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 24%)
+  adding: tdps_2m_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 23%)
+  adding: ts_sfc_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 24%)
+  adding: ua_100_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 10%)
+  adding: ua_10_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 9%)
+  adding: ua_200_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 9%)
+  adding: ua_30_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 10%)
+  adding: ua_50_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 10%)
+  adding: ua_850_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 8%)
+  adding: uas_10m_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 8%)
+  adding: va_100_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: va_10_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: va_200_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: va_30_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: va_50_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: va_850_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 7%)
+  adding: vas_10m_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 8%)
+  adding: wap_500_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 8%)
+  adding: zg_10_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 30%)
+  adding: zg_200_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 26%)
+  adding: zg_30_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 31%)
+  adding: zg_500_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 25%)
+  adding: zg_50_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 31%)
+  adding: zg_850_FIM_24jan2024_00z_d01_d32_m02.nc (deflated 21%)
+to hpss fim_24jan2024_m02.zip /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc3d/fim7_2024012318.nc /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2024
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+WARNING: Error -13 unlinking HPSS-resident Index File /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2024/fim7_2024012318.nc.idx
+ERROR: Error -13 on hpss_Open (create) for /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2024/fim7_2024012318.nc
+HTAR: HTAR FAILED
+###WARNING  htar returned non-zero exit status.
+            72 = /apps/hpss_hera/bin/htar -T 4 -cPvf /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2024/fim7_2024012318.nc /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc3d/fim7_2024012318.nc
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+WARNING: Error -13 unlinking HPSS-resident Index File /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2024/fim_24jan2024_m02.zip.idx
+ERROR: Error -13 on hpss_Open (create) for /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2024/fim_24jan2024_m02.zip
+HTAR: HTAR FAILED
+###WARNING  htar returned non-zero exit status.
+            72 = /apps/hpss_hera/bin/htar -T 4 -cPvf /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2024/fim_24jan2024_m02.zip fim_24jan2024_m02.zip
+_______________________________________________________________
+Start Epilog on node hfe09 for job 62380803 :: Mon Jun 24 22:58:12 UTC 2024
+Job 62380803 finished for user Shan.Sun in partition service with exit code 72:0
+_______________________________________________________________
+End Epilogue Mon Jun 24 22:58:12 UTC 2024

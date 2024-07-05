@@ -1,0 +1,24 @@
+
+rocotorun  -d retro202401.db -w retro202401.xml
+rocotostat -d retro202401.db -w retro202401.xml
+
+2023/10/16 - several runs in 200807 are running under makeup
+missing runs:
+20120118:  reduce dt
+20120326:  
+20120914:  
+
+
+rocotostat -w driver_retro_subx_11.xml -d driver_retro_subx_11.db
+rocotorun  -w driver_retro_subx_11.xml -d driver_retro_subx_11.db
+
+rocotorun  -w driver_retro_subx_15p1.xml -d driver_retro_subx_15p1.db
+rocotostat -w driver_retro_subx_15p1.xml -d driver_retro_subx_15p1.db
+
+rocotorun -w driver_retro_subx2.xml -d driver_retro_subx2.db
+rocotostat -w driver_retro_subx2.xml -d driver_retro_subx2.db
+rocotoboot -w driver_retro_subx2.xml -d driver_retro_subx2.db -c 201605110000 -t fim
+rocotorun -w driver_retro_subx_16p4.xml -d driver_retro_subx_16p4.db
+
+
+hsi ls -l /ESRL/BMC/fim/5year/Shan.Sun/subx_rt_FIMr1.1/2023

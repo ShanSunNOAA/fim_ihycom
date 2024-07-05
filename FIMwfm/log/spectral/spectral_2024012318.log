@@ -1,0 +1,34 @@
+
+FIM_RUN = /scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p
+YEAR    = 2024
+MONTH   = 01
+DAY     = 23
+HOUR    = 18
+PES     = 80
+
+workdir=/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024012318/prep 
+IC tar is /BMC/fim/5year/Shan.Sun/cfsIC/202401/cfsv2_2024012318.tar 
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+******************************************************************
+*   Welcome to the NESCC High Performance Storage System         *
+*                                                                *
+*   Current HPSS version: 9.3.10                                 * 
+*                                                                * 
+*       Please Submit Helpdesk Request to                        *
+*        rdhpcs.hpss.help@noaa.gov                               *
+*                                                                *
+******************************************************************
+Username: Shan.Sun  UID: 5118  Acct: 5118(5118) Copies: 1 COS: 0 Firewall: off [hsi.9.3.0.p0 Thu Feb 1 17:57:19 UTC 2024] 
+get  '/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/FIMrun_theiaintel_p/fim7_64_80_2024012318/prep/cfsv2_2024012318.tar' : '/BMC/fim/5year/Shan.Sun/cfsIC/202401/cfsv2_2024012318.tar' (2024/06/21 23:37:34 1145313280 bytes, 987532.2 KBS )
+ocnanl.gdas.2024012318.ice_model.res.nc
+ocnanl.gdas.2024012318.ocean_temp_salt.res.nc
+sfcanl.gdas.2024012318
+siganl.gdas.2024012318
+/bin/tar: Removing leading `/' from member names
+/tmp/HTAR_CF_CHK_2722511_1719013053
+rmcmd:  /bin/rm cfsv2_2024012318.tar
+_______________________________________________________________
+Start Epilog on node hfe04 for job 62364976 :: Mon Jun 24 17:41:37 UTC 2024
+Job 62364976 finished for user Shan.Sun in partition service with exit code 0:0
+_______________________________________________________________
+End Epilogue Mon Jun 24 17:41:37 UTC 2024

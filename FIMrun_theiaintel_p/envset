@@ -1,0 +1,17 @@
+set -e
+. /apps/lmod/lmod/init/ksh
+module purge
+module load intel/2022.1.2
+module load impi/2022.1.2
+module load netcdf/4.6.1
+module load intel/2022.1.2
+module load impi/2022.1.2
+module load grads/2.0.2
+module load ncl/6.5.0
+module load imagemagick/7.0.8-53
+module load cnvgrib/1.4.0
+module use -a /scratch3/NCEPDEV/nwprod/lib/modulefiles
+export FC=mpiifort
+module list
+export THREAD_SS2ICOS=yes
+set +e

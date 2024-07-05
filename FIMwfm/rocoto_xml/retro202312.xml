@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE workflow [
+  <!ENTITY FIM_HOME "/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024">
+  <!ENTITY PES "80">                     <!-- root node FALSE; 0 write tasks   -->
+  <!ENTITY NPROC "80">
+  <!ENTITY GLVL "7">
+  <!ENTITY NVL "64">
+  <!ENTITY FCST_INTERVAL "24">            <!-- needs to match ArchvIntvl in FIMnamelist! -->
+  <!ENTITY FCST_LENGTH "768">
+  <!-- set this to 3 character str - ex. 96 would be 096 - used for final FIM verification file required -->
+  <!ENTITY FCST_LENGTH_STR "768">
+  <!ENTITY FIM_WALLTIME "06:55:00">
+  <!ENTITY OFFSET "00:00:00">
+  <!ENTITY MEMBER_ID "C">
+  <!ENTITY IC_TYPE "1">    <!-- 1=retro; 2=rt; 0=default -->
+  <!ENTITY NC3D_DIR "/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc3d">
+  <!ENTITY NC_SUBX_DIR "/scratch2/BMC/gsd-fv3-dev/sun/retro_subx_jun2024/retro_subx_FIMr1p1_nc2d">
+   
+  <!-- External parameter entites -->
+  <!ENTITY % SITES  SYSTEM "all_sites.xml">     %SITES;
+  <!ENTITY % TASKS  SYSTEM "all_retro_tasks.xml">  %TASKS;
+
+  <!ENTITY FIM_RUN "&FIM_HOME;/FIMrun_theiaintel_p">
+  %theia;
+]>
+
+<workflow realtime="F" scheduler="&SCHEDULER;" cyclethrottle="20" cyclelifespan="9:00:00:00">
+  <log>
+    <cyclestr>&FIM_LOG;/workflow/workflow_@Y@m@d@H_omp.log</cyclestr>
+  </log>
+
+  <cycledef>202310180600 202310180600 6:00:00</cycledef>
+
+  <metatask>
+    <var name="member">01</var>
+    &spectral_subx_retro_task;
+    &prep_subx_task;
+    &fim_subx_task;
+    &fim2nc_subx_task;
+    &zip_subx_task;
+    &anomaly_subx_task;
+  </metatask>
+</workflow>
